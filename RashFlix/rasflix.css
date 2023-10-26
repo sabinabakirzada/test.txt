@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.modal-container{
+background-color: rgba(0, 0, 0, 0.397);
+border-radius: 10px;
+
+   position: absolute;
+   left: 40%;
+   top: 20%;
+    width: 300px;
+    height: 300px;
+    
+    
+}
+.close{
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+}
+#newfilm{
+    position: relative;
+    left: 100px;
+}
+
+.modal-body form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 150px;
+    position: relative;
+    left: 25px;
+    
+}
+h3{
+    position: relative;
+    left: 35%;
+}
+
+.modal-footer button{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    
+}
+#newfilm{
+position: relative;
+left: 5px;
+}

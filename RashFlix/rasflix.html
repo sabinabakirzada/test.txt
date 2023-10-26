@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rasflix.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#exampleModal">
+        Add User</button>
+
+       <div class="modal-container">
+           <div class="modal-header">
+               <h3>Film</h3>
+               <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+
+           <div class="modal-body">
+               <form action="">
+                   <input id="filmname" type="text" placeholder="Film Name">
+                   <input id="genre" type="text" placeholder="Genre">
+                   <input id="filmname" type="text" placeholder="Film Name">
+                   <input id="genre" type="text" placeholder="Genre">
+                   
+               </form>
+           </div>
+
+           <div class="modal-footer">
+            <button
+              id="newfilm"
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >Close</button>
+            <button type="button" id="newfilm" class="btn btn-success">Save changes</button>
+          </div>
+       </div> 
+    </div>
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          
+        </tbody>
+      </table>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./rashflix.js"></script>
+</body>
+</html>
